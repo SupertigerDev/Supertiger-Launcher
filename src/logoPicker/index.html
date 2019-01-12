@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="title">
+            <p>Browse an icon for <span id="game-name">game</span>.</p>
+            <p style="font-size: 13px;">If the icon does not appear in the center of the box, please choose a different icon.</p>
+        </div>
+        <div class="hl"></div>
+
+        <div class="container">
+
+            <div class="center-content">
+                <div class="icon-container" id="iconContainer">
+                    <div class="icon" id="icon"></div>
+                </div>
+                <div class="nickname-area">
+                    <input type="text" placeholder="Nickname me boi" id="nickname">
+                </div>
+
+                <div class="browse-button" id="browseButton">Browse icon</div>
+            </div>
+
+        </div>
+
+        <div class="hl" style="position: absolute; bottom: 70px; left: 5px;"></div>
+        <div class="actions">
+            <div id="closeButton" onclick="">Close</div>
+            <div class="button" id="doneButton" onclick="">Done</div>
+        </div>
+        <div class="loading" id="loadingWindow"><div class="loading-text">Loading...</div></div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+
+</html>

@@ -1,0 +1,7 @@
+.tiny-view{
+    background: none;
+    border: none;
+}
+.tiny-view:before {
+    background: none;
+}

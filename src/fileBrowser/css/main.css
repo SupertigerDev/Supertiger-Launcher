@@ -1,0 +1,136 @@
+html,
+body {
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    transition: 0.3s opacity;
+}
+
+
+.content {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(36, 36, 36, 0.945);
+    border: solid 2px rgba(255, 255, 255, 0.308);
+    border-radius: 10px;
+}
+
+.title {
+    margin-top: 10px;
+    margin-left: 10px;
+    user-select: none;
+    -webkit-app-region: drag;
+}
+
+
+.hl {
+    width: calc(100% - 10px);
+    border-bottom: solid 1px white;
+    display: table;
+    margin: auto;
+}
+
+.tool-bar {
+    padding: 5px;
+    background: rgba(65, 65, 65, 0.795);
+    user-select: none;
+}
+
+.back-button {
+    background: rgba(92, 92, 92, 0.692);
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    user-select: none;
+    transition: 0.3s;
+    padding-right: 10px;
+}
+
+.back-button:hover {
+    background: rgba(92, 92, 92, 0.884);
+}
+
+.material-icons {
+    display: inline-flex;
+    vertical-align: top;
+}
+
+.files-area{
+    height: calc(100% - 175px);
+    overflow: auto;
+    user-select: none;
+}
+.file {
+    padding: 5px;
+    background: rgba(49, 49, 49, 0.699);
+    margin: 5px;
+    user-select: none;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.file:hover{
+    background: rgba(88, 88, 88, 0.863);
+}
+
+.file .file-name {
+    display: inline-block;
+}
+
+.file .folder-icon {
+
+}
+
+.file .file-icon {
+    color: rgba(71, 255, 111, 0.418);
+}
+
+.actions {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+
+#closeButton,
+.button {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.274);
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    user-select: none;
+    transition: 0.2s;
+    display: inline-block;
+
+}
+
+#closeButton:hover {
+    background-color: rgba(255, 47, 47, 0.178);
+}
+
+.button:hover {
+    background-color: rgba(47, 127, 255, 0.178);
+}
+.drives{
+    display: inline-block;
+}
+.drive-list{
+    display: inline-block;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.562);
+    border-radius: 20px;
+    user-select: none;
+    transition: 0.3s;
+}
+
+.drive-list:hover{
+    background: rgba(32, 32, 32, 0.562);
+}

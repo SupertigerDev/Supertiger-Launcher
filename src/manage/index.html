@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <style id="testuuuu"></style>
+</head>
+
+<body>
+    <div class="content">
+        <div id="closeButton" onclick="">Close</div>
+        <div class="title">Manage your games</div>
+        <div class="introduction">Right on a game to manage.</div>
+
+        <div class="stats">
+            <span class="stats-span">Total Games: <span id="totalGamesSpan">0</span></span>
+            <span class="stats-span">Total pinned games: <span id="totalPinnedSpan">0</span>/7</span>
+        </div>
+
+        <div class="game-list" id="gameList">
+        </div>
+        <div class="button" id="addGame">Add a game</div>
+
+    </div>
+
+    <!-- initially hidden right-click menu -->
+    <div class="menu" id="rightClickMenu">
+        <ul class="menu-options">
+            <li class="menu-option" id="pinOption">Pin to top (5)</li>
+            <li class="menu-option" id="editOption">Edit</li>
+            <li class="menu-option" id="deleteOption">Delete</li>
+        </ul>
+    </div>
+
+</body>
+<script src="js/main.js"></script>
+
+</html>
