@@ -12,7 +12,7 @@ const remote = require('electron').remote;
 const {
     dialog
 } = require('electron').remote
-const utils = require("../../utils/utils.js")
+const utils = require("../../utils")
 
 const app = remote.app;
 
