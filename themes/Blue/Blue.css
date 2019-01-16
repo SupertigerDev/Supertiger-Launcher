@@ -1,0 +1,9 @@
+.tiny-view{
+    background: rgb(20, 37, 110);;
+    border: none;
+    opacity: 0.5;
+}
+
+.tiny-view:before {
+    background: none;
+}
