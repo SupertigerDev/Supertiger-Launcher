@@ -12,7 +12,6 @@ const remote = require('electron').remote;
 const {
     dialog
 } = require('electron').remote
-const utils = require("../../utils")
 
 const app = remote.app;
 
@@ -55,7 +54,15 @@ ipcRenderer.on('reload-theme', () => {
         tinyView.removeAttribute('style')
     }
 })
-utils.loadTheme();
+function loadTheme() {
+    theme = store.get('theme')
+    if (theme == undefined) {
+        themeLink.removeAttribute('href')
+        return;
+    }
+    themeLink.setAttribute('href', "../../themes/" + theme.folderName+"/" +theme.config.fileName )
+}
+loadTheme();
 
 launchers.addEventListener('click', (event) => {
     const closest = event.target.closest('.launcher')
