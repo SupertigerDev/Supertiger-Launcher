@@ -1,7 +1,7 @@
 {
-  "name": "quickGameOpener",
+  "name": "Supertiger-Launcher",
   "version": "1.0.0",
-  "description": "",
+  "description": "Quickly launch your games from your desktop!",
   "main": "index.js",
   "scripts": {
     "start": "electron ."
