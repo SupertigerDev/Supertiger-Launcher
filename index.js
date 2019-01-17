@@ -30,7 +30,7 @@ let SupertigerAutoLauncher = new AutoLaunch({
 
 if (config === undefined || config.startup == undefined || config.startup == true) {
   SupertigerAutoLauncher.enable();
-} else{
+} else {
   SupertigerAutoLauncher.disable();
 }
 
@@ -120,8 +120,8 @@ ipcMain.on('close-logo-picker', (evt, filePath, logoPath, nickname, gameID) => {
   }
 
   store.set('games.' + Date.now(), details)
-  
-  if (setupWindow === null || setupWindow === undefined){
+
+  if (setupWindow === null || setupWindow === undefined) {
     mainWindow.send('reloadList')
     if (manageWindow !== null || manageWindow !== undefined) {
       manageWindow.webContents.send('reload');
@@ -201,7 +201,7 @@ ipcMain.on('reload-theme', () => {
   config = store.get('config');
   if (config === undefined || config.startup == undefined || config.startup == true) {
     SupertigerAutoLauncher.enable();
-  } else{
+  } else {
     SupertigerAutoLauncher.disable();
   }
   mainWindow.send('reload-theme')
