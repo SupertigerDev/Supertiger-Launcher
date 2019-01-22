@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron ."
   },
-  "keywords": [],
+  "keywords": ["electron","launcher"],
   "author": "Supertiger",
   "license": "ISC",
   "dependencies": {
