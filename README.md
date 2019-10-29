@@ -1,6 +1,3 @@
-# Supertiger-Launcher
-Quickly launch your games from your desktop!
-
 #NO LONGER MAINTAINED
 This repo has been abandoed by all maintainers, no support or updates will be made in the near future.
 ## Notes
